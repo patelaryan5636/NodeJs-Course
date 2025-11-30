@@ -456,4 +456,4 @@ This README and course materials: **CC BY-NC-SA 4.0** (adapt as needed for comme
 
 This README is designed to be a living document. For cohort-based training, attach lesson plans, slide decks, and recording links into `docs/session-<n>.md`. For self-study, follow the module order and ensure you complete each lab and capstone in sequence.
 
-*Good luck — build, break, debug, and iterate.*
+*Good luck — build, break, debug, and iterate.* 
