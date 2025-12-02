@@ -1,4 +1,4 @@
-# Node.js — Professional → Master: Complete Course README
+ Node.js — Professional → Master: Complete Course README
 
 > **Course goal:** Take a software engineer from professional-level Node.js skills to master-level expertise — system design, high-scale services, advanced internals, and leadership in Node.js architecture and operations.
 
