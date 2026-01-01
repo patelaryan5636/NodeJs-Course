@@ -105,8 +105,16 @@ Basic create, read, update, delete operations template.
 - **Maintainability:** Clear structure and organization
 - **Educational:** Code is structured to demonstrate best practices
 
+## Known Issues
+
+- **Port Conflicts:** Some services currently share the same ports and cannot run simultaneously:
+  - Port 9500: Newsletter API, Phone OTP API, Map Service
+  - Port 10000: Newsletter service, Comment API, Comment Rating, Realtime Service
+  - These will need unique ports assigned in future updates
+
 ## Future Enhancements
 
+- Resolve port conflicts across all services
 - Add TypeScript support across all services
 - Implement shared libraries for common functionality
 - Add comprehensive testing infrastructure
