@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-master-course",
+  "version": "1.0.0",
+  "description": "Node.js Professional to Master Complete Course - A comprehensive repository for mastering Node.js",
+  "private": true,
+  "workspaces": [
+    "packages/services/*",
+    "packages/libs/*"
+  ],
+  "scripts": {
+    "dev": "echo 'Choose a service to run from packages/services/'",
+    "build": "npm run build --workspaces",
+    "test": "npm test --workspaces",
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write \"**/*.{js,ts,json,md}\"",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "microservices",
+    "course",
+    "tutorial"
+  ],
+  "author": "Node.js Master Course",
+  "license": "CC-BY-NC-SA-4.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0"
+  }
+}
