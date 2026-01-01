@@ -112,6 +112,20 @@ Basic create, read, update, delete operations template.
   - Port 10000: Newsletter service, Comment API, Comment Rating, Realtime Service
   - These will need unique ports assigned in future updates
 
+## Security Considerations
+
+⚠️ **Important:** The current services are educational examples and require security hardening before production use:
+
+- **Missing Rate Limiting:** Authentication endpoints lack rate limiting, making them vulnerable to brute force attacks
+  - Affects: Auth Service (Server.js, Auth-server.js), Backend Service
+  - Recommendation: Implement rate limiting middleware (e.g., express-rate-limit)
+- **Token Storage:** Consider using secure token storage mechanisms
+- **Input Validation:** Add comprehensive input validation across all services
+- **HTTPS:** Enable HTTPS in production environments
+- **Secrets Management:** Use environment variables or secret management services for credentials
+
+For production deployment, refer to Module 7 of the course (Security & Hardening).
+
 ## Future Enhancements
 
 - Resolve port conflicts across all services
