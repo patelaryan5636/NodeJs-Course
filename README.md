@@ -1,6 +1,60 @@
-# Node.js — Professional → Master: Complete Course README
+# Node.js — Professional → Master: Complete Course
 
 > **Course goal:** Take a software engineer from professional-level Node.js skills to master-level expertise — system design, high-scale services, advanced internals, and leadership in Node.js architecture and operations.
+
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/patelaryan5636/NodeJs-Course.git
+cd NodeJs-Course
+
+# Use the correct Node.js version
+nvm use
+
+# Install dependencies
+npm install
+
+# Start local infrastructure (databases, cache, etc.)
+cd infra
+docker compose up -d
+
+# Navigate to a service and run it
+cd ../packages/services/auth-service
+node Server.js
+```
+
+For detailed setup instructions, see section 8: [How to run exercises & starter commands](#8-how-to-run-exercises--starter-commands).
+
+---
+
+## 📁 Repository Structure
+
+This repository is organized as a **monorepo** with npm workspaces:
+
+```
+NodeJs-Course/
+├── packages/
+│   ├── services/          # Microservices (auth, chat, email, etc.)
+│   └── libs/             # Shared libraries
+├── infra/
+│   ├── docker-compose.yml # Local development infrastructure
+│   └── k8s/              # Kubernetes manifests
+├── docs/
+│   ├── architecture.md   # System architecture
+│   └── runbooks/         # Operational guides
+├── scripts/              # Utility scripts
+├── .github/workflows/    # CI/CD workflows
+├── package.json          # Root package with workspaces
+└── README.md            # This file
+```
+
+See [docs/architecture.md](./docs/architecture.md) for detailed architecture documentation.
 
 ---
 
