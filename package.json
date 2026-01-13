@@ -1,4 +1,5 @@
 {
+  "type": "commonjs",
   "name": "nodejs-master-course",
   "version": "1.0.0",
   "description": "Node.js Professional to Master Complete Course - A comprehensive repository for mastering Node.js",
